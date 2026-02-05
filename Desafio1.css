@@ -1,0 +1,19 @@
+.linha{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px; /* espaço entre as linhas */
+}
+
+.quad_maior{
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+    display: flex;
+}
+
+.quad_menor{
+    background-color: orange;
+    height: 45px;
+    width: 45px;
+    display: flex;
+}
