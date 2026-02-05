@@ -1,0 +1,19 @@
+.linha{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px; /* espaço entre as linhas */
+}
+
+.ret_azul{
+    background-color: cornflowerblue;
+    height: 250px;
+    width: 250px;
+    display: flex;
+}
+
+.ret_amar{
+    background-color: yellow;
+    height: 250px;
+    width: 250px;
+    display: flex;
+}
