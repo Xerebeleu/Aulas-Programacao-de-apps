@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filtro vetores</title>
+</head>
+<body>
+    <h1>Página Filtrada</h1>
+    <script type = "module">
+        import{
+    filteredUserActives,
+    filteredUserInactives,
+    filteredAnalytsActives,
+    filteredDev4000,
+    filteredIdadeMaior,
+    filteredIdadeMenor,
+    filteredManagersMaior30anos,
+    filteredRolyData_analyst,
+    filteredRolyDesigner,
+    filteredRolyDev,filteredRolyManager,
+    filteredSalarioMaior,
+    filteredSalarioMenor
+} from "/vetores.js";
+
+    console.log(filteredAnalytsActives);
+    console.log(filteredRolyDev)
+
+    document.body.innerHTML += `<pre>${JSON.stringify(filteredUserActives, null, 2)}</pre>`;
+    </script>
+</body>
+</html>
