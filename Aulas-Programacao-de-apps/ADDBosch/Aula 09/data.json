@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "name": "Felipe Lindo maravilhoso ai ai ai se eu te pego",
+        "lastname": "Ludwig",
+        "salary": 3500,
+        "pais": {
+            "pai": "Wellington",
+            "mãe": "Andrea"
+        }
+    },
+    {
+        "id": 1,
+        "name": "Felipe Lindo maravilhoso ai ai ai se eu te pego",
+        "lastname": "Ludwig",
+        "salary": 3500,
+        "pais": {
+            "pai": "Welligton",
+            "mãe": "Andrea"
+        }
+    }
+]
+
