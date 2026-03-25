@@ -6,4 +6,4 @@ function changeColor(e){
     square.style.backgroundColor = color
 }
 
-input.addEventListener("input", changeColor)
+input.addEventListener('input', changeColor)

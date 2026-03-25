@@ -1,0 +1,49 @@
+<!-- Estrutura inicial (HTML + CSS)
+A interface deve conter:
+Um título: Painel de Análise de Produtos
+Um container principal
+Três cards exibindo:
+o Produto mais caro
+o Produto com maior quantidade
+o Valor total em estoque
+Um formulário para cadastrar produtos -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel de Análise de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Painel de Análise de Produtos</h1>
+    </header>
+
+    <main class="container">
+        <section class = "form-section">
+            <input type="text" id="nome" placeholder="Nome do Produto">
+            <input type="number" id="preco" placeholder="Preço (R$)">
+            <input type="number" id="quantidade" placeholder="Quantidade">
+            <button onclick="adicionarProdutos()"> Adicionar Produto</button>
+        </section>
+
+        <section class="cards-conteiner">
+            <div class="card orange">
+                <p>Produto mais caro</p>
+                <h3 id="card-caro">---</h3>
+            </div>
+            <div class="card green">
+                <p>Maior Quantidade</p>
+                <h3 id="card-quantidade">---</h3>
+            </div>
+            <div class="card blue">
+                <p>Valor Total em Estoque</p>
+                <h3 id="card-total">R$ 0,00</h3>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
