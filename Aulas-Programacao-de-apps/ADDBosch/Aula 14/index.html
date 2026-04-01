@@ -1,0 +1,49 @@
+
+<style>
+    @media screen and (min-width: 1024px) {
+  body{
+    background-color: blue;
+  }
+}
+</style>
+
+<div style="height: 500px; width: 500px;">
+    <canvas id="myChart"></canvas>
+</div>
+
+  
+  <script src="chart.js"></script>
+  
+  <script>
+    const dados = [
+        {nome: "macarrao", valor: 5},
+        {nome: "arroz", valor: 10},
+        {nome: "feijao", valor: 7}
+    ]
+
+    const ctx = document.getElementById('myChart');
+  
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: dados.map((p) => {
+            return p.nome
+        }),
+        datasets: [{
+          label: 'Valor:',
+          data: dados.map((p) => {
+            return p.valor
+          }),
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+   
