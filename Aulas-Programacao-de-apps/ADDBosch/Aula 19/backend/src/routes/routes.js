@@ -1,0 +1,14 @@
+import express from 'express'
+import user from './user.js'
+import vehicle from './vehicle.js'
+import pedido from './pedido.js'
+import peca from './peca.js'
+
+export default function(app) {
+    app
+    .use(express.json())
+    .use('/user', user)
+    .use('/vehicle', vehicle)
+    .use('/pedido', pedido)
+    .use('/pecas', peca)
+}
